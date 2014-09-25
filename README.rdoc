@@ -1,5 +1,9 @@
 == Coding Challenge
 
+Rails app with JS/jQuery for max speed and no page refreshing! Modals used instead of browser popups to make things a little more fun and better looking.
+
+== Instructions
+
 We’d like to invite you to go through a coding challenge to showcase how you approach problem solving and assess the quality of your code. 
 
 The challenge is to develop a simple to-do list system. We have two basic requirements:
