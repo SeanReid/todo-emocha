@@ -1,0 +1,11 @@
+<div class="modal-header">
+  <h3>Remove Task</h3>
+</div>
+<div class="modal-body">
+<ul class="errors"></ul>
+Is <b><%= @task.title %></b> completed?
+</div>
+<div class="modal-footer">
+  <%= link_to "Yes, This Task Is Complete", task_path(@task), method: :delete, remote: true, class: "btn btn-danger" %>
+  <%= link_to "No, This Task Isn't Complete", "#", class: "btn ", data: { dismiss: "modal" } %>
+</div>

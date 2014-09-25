@@ -37,11 +37,14 @@ class TasksController < ApplicationController
     end
   end
 
+  def delete
+    @task = Task.find(params[:task_id])
+  end
+
   def destroy
+    @tasks = Task.all
+    @task = Task.find(params[:id])
     @task.destroy
-    respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
-    end
   end
 
   private
