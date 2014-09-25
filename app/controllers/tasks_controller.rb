@@ -21,13 +21,8 @@ class TasksController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @task.update(task_params)
-        format.html { redirect_to @task, notice: 'Task was successfully updated.' }
-      else
-        format.html { render :edit }
-      end
-    end
+    @tasks = Task.all
+    @task.update_attributes(task_params)
   end
 
   def delete
