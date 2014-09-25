@@ -16,15 +16,8 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.new(task_params)
-
-    respond_to do |format|
-      if @task.save
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
-      else
-        format.html { render :new }
-      end
-    end
+    @tasks = Task.all
+    @task = Task.create(task_params)
   end
 
   def update
@@ -43,7 +36,6 @@ class TasksController < ApplicationController
 
   def destroy
     @tasks = Task.all
-    @task = Task.find(params[:id])
     @task.destroy
   end
 
