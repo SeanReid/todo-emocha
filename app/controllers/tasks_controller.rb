@@ -2,7 +2,7 @@ class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   def index
-    @tasks = Task.all
+    @tasks = Task.all.order(created_at: :desc)
   end
 
   def show
@@ -16,12 +16,12 @@ class TasksController < ApplicationController
   end
 
   def create
-    @tasks = Task.all
+    @tasks = Task.all.order(created_at: :desc)
     @task = Task.create(task_params)
   end
 
   def update
-    @tasks = Task.all
+    @tasks = Task.all.order(created_at: :desc)
     @task.update_attributes(task_params)
   end
 
@@ -30,7 +30,7 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    @tasks = Task.all
+    @tasks = Task.all.order(created_at: :desc)
     @task.destroy
   end
 
