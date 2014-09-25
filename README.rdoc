@@ -1,28 +1,11 @@
-== README
+== Coding Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We’d like to invite you to go through a coding challenge to showcase how you approach problem solving and assess the quality of your code. 
 
-Things you may want to cover:
+The challenge is to develop a simple to-do list system. We have two basic requirements:
+The system should be web-based (PHP, Ruby on Rails, etc.)
+It should have ability to create, edit and delete to-do items from a list.
 
-* Ruby version
+Feel free to choose your platform of choice - we are open to using frameworks. This exercise should not take more than a few hours of your time.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This is your chance to impress us! We are looking forward to seeing the quality code you are proud of. 
